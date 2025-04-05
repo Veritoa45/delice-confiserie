@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <img src="./public/logo.png" alt="Delice" />
-      <nav>
+    <header class="header">
+      <img src="./public/logo.png" alt="Delice" class="logo"/>
+      <nav class="nav">
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="#inicio">Inicio</a></li>
           <li><a href="#">Sobre Nosotros</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
+    <div class="line"></div>
     <main>
-      <section>
+      <section id="inicio">
         <h1>Deliciosos</h1>
         <h2>Los mejores platos de la ciudad</h2>
         <video width="320" autoplay muted loop controls>
@@ -28,20 +31,24 @@
       </section>
       <section id="contacto">
         <form
-  action="https://formspree.io/f/mpwpoaap"
-  method="POST"
->
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre" required>
-
-<label for="email">Correo electrónico:</label>
-<input type="email" id="email" name="email" required>
-
-<label for="mensaje">Mensaje:</label>
-<textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-
-<button type="submit">Enviar</button>
-</form>
+            action="https://formspree.io/f/mpwpoaap"
+            method="POST"
+        >
+            <h2>Contacto</h2>
+            <div class="inline">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="inline">    
+        <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+            <div class="inline">
+                <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+        </div>
+            <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
     <footer></footer>
