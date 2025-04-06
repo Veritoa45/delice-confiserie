@@ -19,6 +19,14 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+/* Header */
+
 .header {
   width: 100%;
 }
@@ -31,8 +39,7 @@ body {
 }
 
 .logo {
-  width: 200px;
-  height: auto;
+  height: 80px;
   object-fit: cover;
 }
 
@@ -54,6 +61,52 @@ body {
   margin: 10px 0;
 }
 
+/* Inicio */
+
+video {
+  margin: 20px 0;
+}
+
+/* Productos */
+
+.box {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box-card {
+  width: 250px;
+  height: 350px;
+  position: relative; /* Necesario para posicionar el h3 */
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.box-card h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(23, 23, 24, 0.6);
+  color: #fcf3cf;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Reseñas */
+
 #resenias {
   margin: 30px auto;
   display: flex;
@@ -65,7 +118,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
@@ -73,7 +126,7 @@ body {
 }
 
 .card {
-  width: 250px;
+  width: 100%;
   background-color: #171718;
   border-radius: 10px;
   color: #fcf3cf;
@@ -86,12 +139,19 @@ body {
   box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.3);
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
 .shortLine {
   width: 50px;
   height: 1px;
   background-color: #fcf3cf;
   margin: 10px 0;
 }
+
+/* Contacto */
 
 #contacto form {
   width: 500px;
@@ -112,13 +172,13 @@ body {
 .inlineForm input {
   width: 400px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .inlineForm textarea {
   width: 400px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 input::placeholder,
@@ -134,7 +194,17 @@ button {
   width: 100px;
   padding: 15px;
   cursor: pointer;
+  border-radius: 15px;
 }
+
+button:hover {
+  background-color: #171718;
+  color: #fcf3cf;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
 
 footer {
   width: 100vw;
@@ -150,6 +220,9 @@ footer {
 .name {
   font-family: "Satisfy", cursive;
   font-size: 30px;
+  background: linear-gradient(to bottom, #b9770e, #f4d03f, #fcf3cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .redes a {
@@ -172,6 +245,8 @@ footer {
   color: #171718;
   transform: scale(1);
 }
+
+/* Medias Queries */
 
 @media (max-width: 768px) {
   .container {
