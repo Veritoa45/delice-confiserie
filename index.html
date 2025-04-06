@@ -3,54 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <img src="./public/logo.png" alt="Delice" class="logo"/>
-      <nav class="nav">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="inline">
+        <img src="./public/logo.png" alt="Delice" class="logo" />
+        <nav class="nav">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#resenias">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="line"></div>
     </header>
-    <div class="line"></div>
     <main>
       <section id="inicio">
         <h1>Deliciosos</h1>
         <h2>Los mejores platos de la ciudad</h2>
         <video width="320" autoplay muted loop controls>
-          <source src="./public/video.mp4" type="video/mp4"/>
-          <track src="./public/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default></track>
+          <source src="./public/video.mp4" type="video/mp4" />
+          <track
+            src="./public/subtitulos.vtt"
+            kind="subtitles"
+            srclang="es"
+            label="Español"
+            default
+          />
         </video>
       </section>
+      <section id="productos">
+        <h2>Productos</h2>
+      </section>
+      <section id="resenias">
+        <h2>Reseñas</h2>
+        <div class="container">
+          <div class="card">
+            <p class="opinion">"Deliciosos y frescos"</p>
+            <div class="shortLine"></div>
+            <p class="user">Nombre Apellido</p>
+          </div>
+          <div class="card">
+            <p class="opinion">"Deliciosos y frescos"</p>
+            <div class="shortLine"></div>
+            <p class="user">Nombre Apellido</p>
+          </div>
+          <div class="card">
+            <p class="opinion">"Deliciosos y frescos"</p>
+            <div class="shortLine"></div>
+            <p class="user">Nombre Apellido</p>
+          </div>
+        </div>
+      </section>
       <section id="contacto">
-        <form
-            action="https://formspree.io/f/mpwpoaap"
-            method="POST"
-        >
-            <h2>Contacto</h2>
-            <div class="inline">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="inline">    
-        <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-            <div class="inline">
-                <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-        </div>
-            <button type="submit">Enviar</button>
+        <form action="https://formspree.io/f/mpwpoaap" method="POST">
+          <h2>Contacto</h2>
+          <div class="inlineForm">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="inlineForm">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+          <div class="inlineForm">
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="50"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="line"></div>
+      <div class="text">
+        <p class="name">Delice Confiserie</p>
+        <div class="redes">
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
