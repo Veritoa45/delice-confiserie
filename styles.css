@@ -19,16 +19,22 @@ body {
   text-align: center;
 }
 
+h1,
 h2 {
   font-family: "Satisfy", cursive;
   font-size: 40px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 /* Header */
 
 .header {
   width: 100%;
+  position: fixed;
+  background-color: #171718;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .inline {
@@ -63,8 +69,13 @@ h2 {
 
 /* Inicio */
 
-video {
+main {
+  margin-top: 150px;
+}
+
+.video {
   margin: 20px 0;
+  width: 800px;
 }
 
 /* Productos */
@@ -81,7 +92,7 @@ video {
 .box-card {
   width: 250px;
   height: 350px;
-  position: relative; /* Necesario para posicionar el h3 */
+  position: relative;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -248,7 +259,11 @@ footer {
 
 /* Medias Queries */
 
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1300px) {
+  .video {
+    width: 400px;
+  }
+
   .container {
     max-width: 500px;
     grid-template-columns: 1fr;
@@ -268,5 +283,69 @@ footer {
 
   .inlineForm textarea {
     width: 250px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  main {
+    margin-top: 180px;
+  }
+
+  h1,
+  h2 {
+    font-size: 32px;
+    margin: 20px 10px;
+  }
+
+  .video {
+    width: 300px;
+  }
+
+  .container {
+    max-width: 500px;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #contacto form {
+    width: 300px;
+  }
+
+  .inlineForm input {
+    width: 250px;
+  }
+
+  .inlineForm textarea {
+    width: 250px;
+  }
+
+  .text {
+    padding: 0 10px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .redes i {
+    font-size: 16px;
+    padding: 5px;
   }
 }
