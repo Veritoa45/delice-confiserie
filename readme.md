@@ -4,7 +4,7 @@
 
 <p>Delice Confiserie es una página web básica desarrollada como parte de un curso de Front-End. Su propósito es representar una confitería ficticia mediante una estructura clara y semántica en HTML, siguiendo buenas prácticas de desarrollo web.</p>
 
-<p>El proyecto utiliza etiquetas como <header>, <main> y <footer> para organizar el contenido de forma lógica, y sienta las bases para futuras mejoras mediante estilos en CSS y funcionalidades en JavaScript.</p>
+<p>El proyecto utiliza etiquetas como "header", "main" y "footer" para organizar el contenido de forma lógica, y sienta las bases para futuras mejoras mediante estilos en CSS y funcionalidades en JavaScript.</p>
 
 <h3>Objetivos del proyecto</h3>
 
