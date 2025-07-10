@@ -1,39 +1,62 @@
-<h1>Delice Confiserie 🍰</h1>
+![Logo](/public/logo.png)
 
-<h3>Descripción</h3>
+# 🍰 Delice Confiserie
 
-<p>Delice Confiserie es una página web básica desarrollada como parte de un curso de Front-End. Su propósito es representar una confitería ficticia mediante una estructura clara y semántica en HTML, siguiendo buenas prácticas de desarrollo web.</p>
+Delice Confiserie es una página web básica desarrollada como parte de un curso de Front-End. Su propósito es representar una confitería ficticia mediante una estructura clara y semántica en HTML, siguiendo buenas prácticas de desarrollo web.
 
-<p>El proyecto utiliza etiquetas como "header", "main" y "footer" para organizar el contenido de forma lógica, y sienta las bases para futuras mejoras mediante estilos en CSS y funcionalidades en JavaScript.</p>
+## 🚀 Tecnologías utilizadas
 
-<h3>Objetivos del proyecto</h3>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,javascript" />
+  </a>
+</p>
 
-<ul> 
-<li>Practicar el uso de HTML semántico.</li>
+## 📦 Instalación y ejecución local
 
-<li>Comprender la estructura base de una página web.</li>
+1. Clonar el repositorio
 
-<li>Sentar las bases para incorporar estilos y comportamientos dinámicos.</li>
+```bash
+    git clone https://github.com/Veritoa45/proyecto-final-ecommerce-veronica-molinari
+    cd proyecto-final-ecommerce-veronica-molinari
+```
 
-<li>Simular una presentación inicial para un sitio web de una confitería.</li>
+2. Ejecutar la app con Go Live
 
-</ul>
+Esto abrirá la app en tu navegador en http://127.0.0.1:5500/index.html
 
-<h3>Tecnologías utilizadas</h3>
+## 🛒 Funcionalidades principales
 
-<ul>
+- Visualización de productos
 
-<li>HTML5</li>
-<li>CSS</li>
-<li>JavaScript</li>
+- Carrito de compras
 
-</ul>
+## 📂 Estructura del proyecto
 
-<h3>Estado del proyecto</h3>
+```
+proyecto-final-ecommerce-veronica-molinari/
+├── js/
+│   ├── script.js         → Lógica para los productos y el carrito
+├── public/               → Imágenes y logo
+├── index.html
+└── styles.css            → Estilos
+```
 
-<p>🚧 En desarrollo: Actualmente cuenta con la estructura básica en HTML. Se planea agregar estilos (CSS) y funcionalidades interactivas (JavaScript) en futuras etapas del curso.</p>
+## 💻 Version Deploy
 
-<h3>Cómo ver el proyecto</h3>
-<p>Clona el repositorio o descarga los archivos.</p>
+Pueden visitar el proyecto en el siguiente link: [Delice Confiserie](https://veritoa45.github.io/proyecto-final-ecommerce-veronica-molinari/)
 
-<p>Abre el archivo index.html en tu navegador favorito.</p>
+## 📬 Contacto
+
+<p align="center">
+  <img src="public/CV.png" alt="Foto" width="80" />
+  <h3 align="center">Verónica Molinari</h3>
+  <p align="center">
+  <a href="https://github.com/Veritoa45">
+    <img src="https://skillicons.dev/icons?i=github" hspace="20"/>
+  </a>
+  <a href="https://www.linkedin.com/in/veronica-molinari/">
+    <img src="https://skillicons.dev/icons?i=linkedin" hspace="20"/>
+  </a>
+  </p>
+</p>

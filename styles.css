@@ -89,19 +89,33 @@ main {
   gap: 30px;
 }
 
+.cards {
+  width: 250px;
+  height: 350px;
+  background-color: #171718;
+  border-radius: 10px;
+  color: #fcf3cf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
 .box-card {
   width: 250px;
   height: 350px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .box-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .box-card h3 {
@@ -114,6 +128,16 @@ main {
   padding: 10px;
   margin: 0;
   text-align: center;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Reseñas */
@@ -255,6 +279,52 @@ footer {
   background-color: #fcf3cf;
   color: #171718;
   transform: scale(1);
+}
+
+/* Carrito  */
+
+.carrito {
+  margin: 30px auto 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  min-width: 400px;
+  background-color: #fcf3cf;
+  color: #171718;
+}
+
+.lista-carrito li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+.lista-carrito button {
+  margin-left: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fcf3cf;
+}
+
+.lista-carrito button {
+  background-color: #171718;
+  width: 50px;
+  color: white;
+  border-color: #171718;
+}
+
+.total-carrito,
+.cantidad-carrito {
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  text-align: left;
 }
 
 /* Medias Queries */
