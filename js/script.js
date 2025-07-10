@@ -149,7 +149,6 @@ function actualizarCarritoHTML() {
   }
 
   carritoCompras.innerHTML = `
-        <h2>Tu Carrito</h2>
         <ul class="lista-carrito"></ul>
         <p class="total-carrito"></p>
         <p class="cantidad-carrito"></p>
