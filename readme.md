@@ -44,7 +44,7 @@ proyecto-final-ecommerce-veronica-molinari/
 
 ## 💻 Version Deploy
 
-Pueden visitar el proyecto en el siguiente link: [Delice Confiserie](https://veritoa45.github.io/proyecto-final-ecommerce-veronica-molinari/)
+Pueden visitar el proyecto en el siguiente link: [Delice Confiserie](https://veritoa45.github.io/delice-confiserie/)
 
 ## 📬 Contacto
 
