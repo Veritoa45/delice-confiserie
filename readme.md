@@ -17,8 +17,8 @@ Delice Confiserie es una página web básica desarrollada como parte de un curso
 1. Clonar el repositorio
 
 ```bash
-    git clone https://github.com/Veritoa45/proyecto-final-ecommerce-veronica-molinari
-    cd proyecto-final-ecommerce-veronica-molinari
+    git clone https://github.com/Veritoa45/delice-confiserie
+    cd delice-confiserie
 ```
 
 2. Ejecutar la app con Go Live
